@@ -1,0 +1,75 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    color: #333;
+}
+
+
+/* Custom Hero Background */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+    color: white;
+}
+
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    object-fit: cover;
+}
+
+
+/* Section Headings */
+.section-title {
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #0d6efd;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Interactive Skill Boxes */
+.skill-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border-bottom: 3px solid #0d6efd;
+    font-weight: 600;
+}
+
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    background: #0d6efd;
+    color: white;
+}
+
+
+/* Certification Cards */
+.cert-card {
+    transition: transform 0.3s ease;
+    cursor: default;
+}
+
+
+.cert-card:hover {
+    transform: scale(1.05);
+}
